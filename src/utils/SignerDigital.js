@@ -1,5 +1,5 @@
 /* global SignerDigital */
-
+/*
 export async function getUSBDevices () {
     var SmartcardReaders = await SignerDigital.getPCSCReaders(true);
     console.log(SmartcardReaders)
@@ -22,3 +22,4 @@ export async function getSelectedCert () {
     const cert = await SignerDigital.getSelectedCertificate();
     console.log(cert)
 }
+*/

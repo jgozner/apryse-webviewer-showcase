@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState, useRef } from 'react';
 import { Box, Text, Icon , Stack, Button, Wrap, Flex, Heading, Divider } from '@chakra-ui/react'
 import { Core } from '@pdftron/webviewer';
 import { WebViewerContext } from '../context/WebViewerContext';
-import { getSelectedCert, getUSBDevices, selectUsbDevice } from '../utils/SignerDigital';
 
 const HSM = () => {
     const file = "PDFTRON_about.pdf";
@@ -17,7 +16,6 @@ const HSM = () => {
     const getUSBCert = async() =>{ 
         try{
 
-            const devices : any = await getUSBDevices();
             //SignerDigital.getSelectedCertificate(certThumbPrint = "", showExpired = false, keyUsageFilter = 128);
            
         }catch(err){
@@ -27,7 +25,6 @@ const HSM = () => {
 
     const getWindowsCert = async() =>{ 
         try{
-            console.log(SignerDigital)
            // const certs = await getSelectedCert();
         }catch(err){
 
