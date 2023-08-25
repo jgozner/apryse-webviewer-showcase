@@ -14,11 +14,11 @@ const WebViewerWrap = () => {
             path: `/webviewer`,
             initialDoc: '/files/PDFTRON_about.pdf',
             fullAPI: true,
-            disabledElements: ['zoomOverlayButton']
         },
             viewer
         ).then(async (instance: WebViewerInstance) => { 
           if(instance){
+
             setInstance?.(instance)
             dispatch(setInitialized(true));
           }

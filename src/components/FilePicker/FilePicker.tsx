@@ -19,7 +19,7 @@ export const FilePicker = () => {
     });
 
     return (
-        <Box w={"240px"}>
+        <Box w={"100%"}>
             <Center py="5">
                 <Image w="120px" src="https://showcase.apryse.com/assets/icons/apryse-logo.svg"/>
             </Center>

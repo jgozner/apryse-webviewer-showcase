@@ -25,7 +25,7 @@ export const App = () => {
       <Provider store={store}>
       <ChakraProvider theme={theme}>
         <WebViewerContext.Provider value={{ instance, setInstance }}>
-          <VStack >
+          <VStack width={"280px"}>
             <FilePicker />
             <SearchBar />
           </VStack>

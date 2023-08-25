@@ -1,4 +1,5 @@
 import Clipping from "../demos/Clipping";
+import CustomAnnotation from "../demos/CustomAnnotation";
 import HSM from "../demos/HSM";
 
 export interface Demo {
@@ -10,20 +11,28 @@ export interface Demo {
 
 const clipping: Demo = {
     element: <Clipping />,
-    title: 'Clipping',
-    path: 'clipping',
-    keywords: ['clip', 'clipping', 'mask'],
+    title: 'Annotation Clipping',
+    path: '/annotation-clipping',
+    keywords: ['clip', 'clipping', 'mask', 'annotation', ],
 };
 
 const hsm: Demo = {
     element: <HSM />,
-    title: 'HSM',
-    path: 'hsm',
-    keywords: ['hsm', 'digital signature', 'signature'],
+    title: 'HSM Signing',
+    path: '/hsm-signing',
+    keywords: ['hsm', 'digital signature', 'signature', 'signing'],
+};
+
+const customAnnotation: Demo = {
+    element: <CustomAnnotation />,
+    title: 'Custom Annotation',
+    path: '/custom-annotation',
+    keywords: ['custom annotation', 'annotation', 'custom'],
 };
 
 
 export const demos = [
     clipping,
-    hsm
+    hsm,
+    customAnnotation
 ]
