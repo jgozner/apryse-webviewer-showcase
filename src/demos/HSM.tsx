@@ -16,8 +16,12 @@ const HSM = () => {
 
     const getUSBCert = async() =>{ 
         try{
+            /* use WebAPI usb see: https://developer.mozilla.org/en-US/docs/Web/API/USB
+            navigator.usb.requestDevice({filters:[]}).then(function(device){
+                console.log(device);
+            });
+            */
             await getUSBDevices();
-            //SignerDigital.getSelectedCertificate(certThumbPrint = "", showExpired = false, keyUsageFilter = 128);
            
         }catch(err){
 
