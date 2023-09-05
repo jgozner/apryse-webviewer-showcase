@@ -15,10 +15,8 @@ import DemoBar from "./components/DemoBar";
 import SearchBar from "./components/SearchBar";
 import { FilePicker } from "./components/FilePicker";
 
-
 export const App = () => {
   const [instance, setInstance] = useState<WebViewerInstance>({} as WebViewerInstance);
-
 
   return(
     <Flex>

@@ -20,6 +20,12 @@ export async function selectUsbDevice(device){
 }
 
 export async function getSelectedCert () {
-    const cert = await SignerDigital.getSelectedCertificate();
-    console.log(cert)
+    const selectedCert = await SignerDigital.getSelectedCertificate();
+    return JSON.parse(selectedCert);
+}
+
+export async function signPDFHash (hash, certThumbPrint) {
+    const signedHash = await SignerDigital.signPdfHash(hash, certThumbPrint);
+    console.log("Signed Hash", signedHash)
+    return signedHash;
 }

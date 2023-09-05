@@ -1,5 +1,6 @@
 import Clipping from "../demos/Clipping";
 import CustomAnnotation from "../demos/CustomAnnotation";
+import CustomZoomTool from "../demos/CustomZoomTool";
 import HSM from "../demos/HSM";
 
 export interface Demo {
@@ -23,6 +24,13 @@ const hsm: Demo = {
     keywords: ['hsm', 'digital signature', 'signature', 'signing'],
 };
 
+const customZoomTool: Demo = {
+    element: <CustomZoomTool />,
+    title: 'Custom Zoom Tool',
+    path: '/custom-zoom-tool',
+    keywords: ['custom', 'tool', 'custom tool'],
+};
+
 const customAnnotation: Demo = {
     element: <CustomAnnotation />,
     title: 'Custom Annotation',
@@ -34,5 +42,6 @@ const customAnnotation: Demo = {
 export const demos = [
     clipping,
     hsm,
+    customZoomTool,
     customAnnotation
 ]
