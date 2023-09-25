@@ -42,13 +42,17 @@ export const theme = extendTheme(
     components: {
       Heading: {
         baseStyle:{
-          color: "gray.700"
+          color: "gray.700",
+        },
+        defaultProps: {
+          size: "lg"
         }
       },
       Text:{
         baseStyle:{
-          color: "gray.600"
-        }
+          color: "gray.600",
+          fontWeight: "medium"
+        },
       },
       Button: {
         defaultProps: {

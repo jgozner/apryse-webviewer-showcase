@@ -1,0 +1,41 @@
+Annotations
+ - permissions
+ - Import/export
+ - custom annotation
+Templates
+ - 
+Forms
+ - import (prefill)
+ - export
+Compare
+ - Text 
+ - Pixel
+Conversion
+ - office -> pdf
+ - PDF -> office
+ - HTML -> PDF
+ - Cad -> PDF
+Extraction
+ - Text Extraction
+ - Image extraction 
+Intelligent Document Processing
+ - Document
+ - Table
+Editing
+ - PDF Editing
+ - DOCX Editing
+Signatures
+ - eSignatures
+ - digital Signatures
+Security
+ - Encryption
+ - DRM
+ - Redaction
+User Interface
+ - Language support
+ - Dark mode
+Media
+ - Video
+ - Audio
+OCR
+Search

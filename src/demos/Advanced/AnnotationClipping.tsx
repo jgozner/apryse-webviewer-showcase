@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState, useRef } from 'react';
-import { Box, Text, Icon , Stack, Button, Wrap, Flex, Heading } from '@chakra-ui/react'
+import { Box, Text, Icon , Stack, Button, Wrap, Flex, Heading, Divider } from '@chakra-ui/react'
 import { Core } from '@pdftron/webviewer';
-import { WebViewerContext } from '../context/WebViewerContext';
+import { WebViewerContext } from '../../context/WebViewerContext';
 
-const Clipping = () => {
+const AnnotationClipping = () => {
     const file = "clipping.pdf";
     const { instance } = useContext(WebViewerContext);
 
@@ -112,7 +112,8 @@ const Clipping = () => {
   return (
     <Box>
         <Stack spacing={'5'}>
-            <Heading>Clipping</Heading>
+            <Heading>Annotation Clipping</Heading>
+            <Divider />
             <Text>Put any annotations or images on the document, and once you're finished, click the "clip" button below. This will flatten all the annotations into the clip path outlined in the document.</Text>
             <Button onClick={clip}>Clip</Button>
             <Button onClick={reset} backgroundColor="red.600" _hover={{ backgroundColor:"red.200" }}>Reset</Button>
@@ -121,4 +122,4 @@ const Clipping = () => {
   );
 }
 
-export default Clipping;
+export default AnnotationClipping;

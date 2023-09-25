@@ -1,34 +1,45 @@
 import * as React from "react"
 import { useState, useEffect } from "react";
 import {
+  Box,
   ChakraProvider,
+  Divider,
   Flex,
+  HStack,
+  Text,
   VStack,
 } from "@chakra-ui/react"
 import Webviewer from "./components/WebViewer"
-import { theme } from "./theme";
+import { theme } from "./config/theme";
 import { Provider } from 'react-redux'
 import store from "./store/store";
 import { WebViewerInstance } from "@pdftron/webviewer";
 import { WebViewerContext } from "./context/WebViewerContext";
 import DemoBar from "./components/DemoBar";
-import SearchBar from "./components/SearchBar";
-import { FilePicker } from "./components/FilePicker";
+import { Header } from "./components/Header";
+import { Outlet, useLocation } from "react-router-dom";
 
 export const App = () => {
   const [instance, setInstance] = useState<WebViewerInstance>({} as WebViewerInstance);
+  const { pathname } = useLocation();
 
   return(
     <Flex>
       <Provider store={store}>
       <ChakraProvider theme={theme}>
         <WebViewerContext.Provider value={{ instance, setInstance }}>
-          <VStack width={"280px"}>
-            <FilePicker />
-            <SearchBar />
+          <VStack flex={1} >
+            <Header />
+            <HStack width={"100%"} alignItems="start" style={{marginTop: 0}}>
+              <DemoBar />
+              <Webviewer />
+              {pathname !== "/" &&
+                <Box width={"350px"} p="2">
+                  <Outlet />
+                </Box>
+              }
+            </HStack >
           </VStack>
-          <Webviewer />
-          <DemoBar />
         </WebViewerContext.Provider>
       </ChakraProvider>
       </Provider>

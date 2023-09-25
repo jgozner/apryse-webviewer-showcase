@@ -1,29 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Box, Button, Collapse, Text, useDisclosure
+  Box, VStack, Collapse, Text, useDisclosure, HStack, IconButton, Divider, Heading, Stack
 } from '@chakra-ui/react';
 import { Outlet, useLocation } from "react-router-dom";
-
+import FilePicker from "../FilePicker";
+import SearchBar from "../SearchBar";
 const DemoBar = () => {
   const { pathname } = useLocation();
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    if(pathname !== "/" && !isOpen){
-      setIsOpen(true)
-    }
-  },[pathname])
-
-  if(pathname === "/"){
-    return (<Box></Box>)
-  }
 
   return (
-    <Box  w={"350px"} display={isOpen ? "visible" : "none"}>
-        <Box 
-          minH="100vh" 
-          p="3">
-          <Outlet />
+    <Box w={"300px"} style={{ marginTop: 0}}>
+        <Divider />
+        <Box minH="100vh">
+            <VStack my="2" mx="3">
+              <FilePicker />
+              <SearchBar />
+            </VStack>
         </Box>
     </Box>
   );
