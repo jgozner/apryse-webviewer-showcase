@@ -8,6 +8,7 @@
     "calibrate": "Menyesuaikan",
     "cancel": "Membatalkan",
     "confirm": "Mengonfirmasi",
+    "currentPageIs": "Halaman saat ini adalah",
     "clear": "Jernih",
     "clearAll": "Bersihkan semua",
     "close": "Menutup",
@@ -20,11 +21,13 @@
     "paste": "Tempel",
     "pasteWithoutFormatting": "Tempel tanpa memformat",
     "delete": "Menghapus",
+    "deleted": "Dihapus",
     "group": "Kelompok",
     "ungroup": "Pisahkan grup",
     "download": "Unduh",
     "edit": "Sunting",
     "extract": "Ekstrak",
+    "extractPage": "Ekstrak Halaman",
     "enterFullscreen": "Layar penuh",
     "exitFullscreen": "Keluar dari layar penuh",
     "fit": "Bugar",
@@ -32,6 +35,7 @@
     "fitToWidth": "Sesuai dengan lebar",
     "more": "Lagi",
     "openFile": "Membuka file",
+    "page": "Halaman",
     "pagePrev": "Halaman sebelumnya",
     "pageNext": "Halaman selanjutnya",
     "pageSet": "Setel halaman",
@@ -44,6 +48,12 @@
     "rotate3D": "Memutar",
     "rotateClockwise": "Putar searah jarum jam",
     "rotateCounterClockwise": "Putar berlawanan arah jarum jam",
+    "rotatedClockwise": "diputar searah jarum jam",
+    "rotatedCounterClockwise": "diputar berlawanan arah jarum jam",
+    "rotationIs": "rotasi halaman saat ini adalah",
+    "movedToBottomOfDocument": "dipindahkan ke bagian bawah dokumen",
+    "movedToTopofDocument": "dipindahkan ke bagian atas dokumen",
+    "extracted": "diekstraksi",
     "save": "Menyimpan",
     "post": "Pos",
     "create": "Membuat",
@@ -56,6 +66,7 @@
     "zoomIn": "Perbesar",
     "zoomOut": "Perkecil",
     "zoomSet": "Setel zoom",
+    "zoomChanged": "Zoom saat ini adalah",
     "zoomControls": "Kontrol Zoom",
     "draw": "Seri",
     "type": "Jenis",
@@ -73,10 +84,14 @@
     "formFieldEdit": "Edit Bidang Formulir",
     "viewShortCutKeysFor3D": "Lihat Tombol Pintasan",
     "markAllRead": "tandai semua telah dibaca",
+    "pageInsertion": "Penyisipan Halaman",
     "insertPage": "Penyisipan Halaman",
     "insert": "Memasukkan",
     "pageManipulation": "Manipulasi Halaman",
     "replace": "Mengganti",
+    "replacePage": "Ganti Halaman",
+    "modal": "modal",
+    "isOpen": "terbuka",
     "setDestination": "Tetapkan Tujuan",
     "showLess": "tampilkan lebih sedikit",
     "showMore": "...lagi",
@@ -89,6 +104,8 @@
     "select": "Pilih",
     "moveToTop": "Pindah ke atas",
     "moveToBottom": "Pindah ke bawah",
+    "movePageToTop": "Pindahkan Halaman ke Atas",
+    "movePageToBottom": "Pindahkan Halaman ke Bawah",
     "backToMenu": "Kembali ke menu",
     "redactPages": "Redaksi halaman",
     "playAudio": "Putar audio",
@@ -103,7 +120,10 @@
     "showComparison": "Tampilkan Perbandingan",
     "back": "Kembali",
     "clearSignature": "Tanda tangan yang jelas",
-    "newDocument": "Dokumen Baru"
+    "readOnlySignature": "Tanda tangan hanya-baca tidak dapat dihapus",
+    "newDocument": "Dokumen Baru",
+    "sideBySideView": "Tampilan Berdampingan",
+    "pageNumberInput": "Masukan nomor halaman"
   },
   "annotation": {
     "areaMeasurement": "Daerah",
@@ -117,6 +137,8 @@
     "formFillCheckmark": "Kutu",
     "formFillCross": "Menyeberang",
     "distanceMeasurement": "Jarak",
+    "rectangularAreaMeasurement": "Luas Persegi Panjang",
+    "ellipseMeasurement": "Daerah Elips",
     "countMeasurement": "Hitung pengukuran",
     "ellipse": "Elips",
     "eraser": "Penghapus",
@@ -137,6 +159,7 @@
     "redact": "Menyusun",
     "formFillDot": "Dot",
     "signature": "Tanda tangan",
+    "snipping": "Alat Potong",
     "squiggly": "berlekuk-lekuk",
     "stamp": "Stempel",
     "stickyNote": "Catatan",
@@ -224,6 +247,8 @@
     "watermarkPanel": "Panel Tanda Air"
   },
   "message": {
+    "showMore": "Menampilkan lebih banyak",
+    "showLess": "Tampilkan Lebih Sedikit",
     "toolsOverlayNoPresets": "Tidak Ada Preset",
     "badDocument": "Gagal memuat dokumen. Dokumen tersebut rusak atau tidak valid.",
     "customPrintPlaceholder": "misalnya 3, 4-10",
@@ -239,6 +264,7 @@
     "noAttachments": "Dokumen ini tidak memiliki lampiran.",
     "noResults": "Tidak ada hasil yang ditemukan.",
     "numResultsFound": "hasil ditemukan",
+    "loadError": "Terjadi Kesalahan Saat Memuat Dokumen",
     "notSupported": "Tipe file tidak didukung.",
     "passwordRequired": "Kata sandi diperlukan",
     "enterPasswordPlaceholder": "Masukkan kata kunci",
@@ -342,6 +368,10 @@
     "colorPalette": {
       "colorLabel": "Warna"
     },
+    "colorPalettePicker": {
+      "addColor": "Tambahkan warna baru",
+      "selectColor": "Pilih warna"
+    },
     "displayMode": {
       "layout": "Tata letak halaman",
       "pageTransition": "Transisi Halaman"
@@ -435,12 +465,10 @@
       "drawSignature": "Gambar Tanda Tangan*",
       "drawInitial": "Gambar Inisial*",
       "pickInitialsFile": "Pilih Inisial",
-      "noSignatures": "Saat ini tidak ada tanda tangan yang disimpan."
+      "noSignatures": "Saat ini tidak ada tanda tangan yang disimpan.",
+      "fontStyle": "gaya tulisan"
     },
     "pageReplacementModal": {
-      "dragAndDrop": "Seret & Jatuhkan file Anda di sini",
-      "selectFile": "Pilih file Anda di sini",
-      "or": "Atau",
       "yourFiles": "File Anda",
       "chooseFile": "Pilih file",
       "localFile": "File Lokal",
@@ -487,6 +515,9 @@
       "count": "Menghitung",
       "length": "Panjang"
     },
+    "freeTextOption": {
+      "autoSizeFont": "Skala ukuran font secara dinamis"
+    },
     "measurementOption": {
       "scale": "Skala"
     },
@@ -528,12 +559,16 @@
       "deletionModal": {
         "title": "Hapus Konten",
         "message": "Apakah Anda yakin ingin menghapus konten yang dipilih? Ini tidak dapat diurungkan."
+      },
+      "digitalSign": {
+        "title": "Dokumen Tersegel Peringatan",
+        "message": "Dokumen ini telah ditandatangani dan tidak dapat diubah atau diubah."
       }
     },
     "stylePopup": {
       "textStyle": "Gaya Teks",
       "colors": "warna",
-      "invalidFontSize": "Ukuran font harus kurang dari",
+      "invalidFontSize": "Ukuran font harus berada dalam kisaran berikut",
       "labelText": "Teks Label",
       "labelTextPlaceholder": "Tambahkan teks label"
     },
@@ -576,7 +611,11 @@
       "delete": "Menghapus",
       "rotateClockwise": "Searah jarum jam",
       "rotateCounterClockwise": "Berlawanan arah jarum jam",
-      "moreOptions": "Lebih banyak pilihan"
+      "rotatePageClockwise": "Putar Halaman Searah Jarum Jam",
+      "rotatePageCounterClockwise": "Putar Halaman Berlawanan Arah Jarum Jam",
+      "moreOptions": "Lebih banyak pilihan",
+      "moreOptionsMenu": "Menu Pilihan Gambar Kecil Lainnya",
+      "enterPageNumbers": "Masukkan nomor halaman untuk dipilih"
     },
     "thumbnailsControlOverlay": {
       "move": "Pindahkan halaman"
@@ -737,6 +776,9 @@
       "deleteTitle": "Hapus warna khusus",
       "deleteMessage": "Hapus warna khusus yang dipilih? Ini akan dihapus dari palet warna Anda."
     },
+    "colorPalettePicker": {
+      "deleteTitle": "Hapus warna khusus"
+    },
     "multiDeleteAnnotation": {
       "title": "Hapus Anotasi?",
       "message": "Menghapus akan menghapus semua komentar, balasan, dan pengelompokan dan tidak dapat diurungkan.\n\n Anda yakin ingin menghapus anotasi ini?"
@@ -748,7 +790,7 @@
     },
     "connectToURL": {
       "title": "Peringatan keamanan",
-      "message": "Dokumen ini mencoba terhubung ke:\n\n{{- uri}}.\n\n Jika Anda mempercayai dokumen ini, klik Konfirmasi untuk membukanya."
+      "message": "Dokumen ini mencoba terhubung ke:\n\n{{- uri}}\n\n Jika Anda mempercayai dokumen ini, klik Konfirmasi untuk membukanya."
     }
   },
   "shortcut": {
@@ -1041,6 +1083,18 @@
       "cancelMessage": "Anda yakin ingin membatalkan pemotongan semua halaman yang dipilih?"
     }
   },
+  "snippingPopUp": {
+    "title": "Alat Potong",
+    "clipboard": "Salin ke Clipboard",
+    "download": "Unduh",
+    "cropAndRemove": "Potong dan Hapus",
+    "snippingModal": {
+      "applyTitle": "Terapkan pemotongan?",
+      "applyMessage": "Tindakan ini akan memotong area yang ditentukan secara permanen dan menghapus halaman lainnya. Ini tidak dapat dibatalkan.",
+      "cancelTitle": "Batal pemotongan?",
+      "cancelMessage": "Apakah Anda yakin ingin menghentikan pemotongan?"
+    }
+  },
   "textEditingPanel": {
     "paragraph": "Gugus kalimat",
     "text": "Teks"
@@ -1083,6 +1137,26 @@
     "watermarkOptions": "Opsi Tanda Air",
     "watermarks": "Tanda air"
   },
+  "portfolio": {
+    "createPDFPortfolio": "Buat Portofolio PDF",
+    "uploadFiles": "Unggah berkas",
+    "uploadFolder": "Unggah Folder",
+    "addFiles": "Tambahkan File",
+    "addFile": "Tambah berkas",
+    "addFolder": "Tambah Folder",
+    "createFolder": "Membuat folder",
+    "portfolioPanelTitle": "Portofolio PDF",
+    "portfolioNewFolder": "Folder baru",
+    "portfolioFolderPlaceholder": "Nama folder",
+    "portfolioFilePlaceholder": "Nama file",
+    "folderNameAlreadyExists": "Nama folder sudah ada",
+    "fileNameAlreadyExists": "Nama file sudah ada",
+    "openFile": "Buka di Tab Baru",
+    "fileAlreadyExists": "File Sudah Ada",
+    "fileAlreadyExistsMessage": "File \"{{fileName}}\" sudah ada di portofolio.",
+    "deletePortfolio": "Anda yakin ingin menghapus \"{{fileName}}\"?",
+    "reselect": "Pilih ulang"
+  },
   "languageModal": {
     "selectLanguage": "Pilih bahasa"
   },
@@ -1098,8 +1172,18 @@
     "lineSpacing": "Penspasian baris & paragraf",
     "bulletList": "Daftar berpoin",
     "numberList": "Daftar bernomor",
+    "decreaseIndent": "Kurangi indentasi",
+    "increaseIndent": "Tingkatkan indentasi",
     "insertLink": "Sisipkan tautan",
     "insertImage": "Sisipkan gambar",
+    "table": "Meja",
+    "insertRowAbove": "Sisipkan Baris Di Atas",
+    "insertRowBelow": "Sisipkan Baris Di Bawah",
+    "insertColumnRight": "Sisipkan Kolom Kanan",
+    "insertColumnLeft": "Sisipkan Kolom Kiri",
+    "deleteRow": "Hapus Baris",
+    "deleteColumn": "Hapus Kolom",
+    "deleteTable": "Hapus Tabel",
     "notSupportedOnMobile": "Pengeditan Office tidak didukung di perangkat seluler."
   },
   "insertPageModal": {
@@ -1184,6 +1268,25 @@
     "watermark": "Tanda air",
     "addWatermark": "Tambahkan Tanda Air",
     "save": "Menyimpan file",
-    "pageError": "Halaman tidak valid. Rentang halaman yang valid adalah antara 1 -"
+    "pageError": "Halaman tidak valid. Rentang halaman yang valid adalah antara 1 -",
+    "fileNameCannotBeEmpty": "Nama File tidak boleh kosong"
+  },
+  "filePicker": {
+    "dragAndDrop": "Seret & Jatuhkan file Anda di sini",
+    "selectFile": "Pilih file Anda di sini",
+    "or": "Atau"
+  },
+  "stylePanel": {
+    "headings": {
+      "styles": "Gaya",
+      "annotation": "Anotasi",
+      "annotations": "Anotasi",
+      "tool": "Alat",
+      "textStyles": "Gaya Teks",
+      "currentColor": "Warna Saat Ini",
+      "customColors": "Warna Khusus"
+    },
+    "addColorToCustom": "Tambahkan ke warna khusus",
+    "noToolSelected": "Pilih alat untuk melihat properti alat"
   }
 }

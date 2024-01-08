@@ -8,6 +8,7 @@
     "calibrate": "교정",
     "cancel": "취소",
     "confirm": "확인하다",
+    "currentPageIs": "현재 페이지는",
     "clear": "지우기",
     "clearAll": "모두 지우기",
     "close": "닫기",
@@ -20,11 +21,13 @@
     "paste": "반죽",
     "pasteWithoutFormatting": "서식 없이 붙여넣기",
     "delete": "삭제",
+    "deleted": "삭제됨",
     "group": "그룹",
     "ungroup": "그룹해제",
     "download": "다운로드",
     "edit": "편집",
     "extract": "선택페이지 다운로드",
+    "extractPage": "페이지 추출",
     "enterFullscreen": "전체화면",
     "exitFullscreen": "전체화면 나가기",
     "fit": "맞추기",
@@ -32,6 +35,7 @@
     "fitToWidth": "너비에 맞추기",
     "more": "더보기",
     "openFile": "파일열기",
+    "page": "페이지",
     "pagePrev": "이전페이지",
     "pageNext": "다음페이지",
     "pageSet": "페이지설정",
@@ -44,6 +48,12 @@
     "rotate3D": "3D회전",
     "rotateClockwise": "오른쪽으로 회전",
     "rotateCounterClockwise": "왼쪽으로 회전",
+    "rotatedClockwise": "시계 방향으로 회전",
+    "rotatedCounterClockwise": "시계 반대 방향으로 회전",
+    "rotationIs": "현재 페이지 회전은",
+    "movedToBottomOfDocument": "문서 하단으로 이동됨",
+    "movedToTopofDocument": "문서의 맨 위로 이동됨",
+    "extracted": "추출됨",
     "save": "저장",
     "post": "게시",
     "create": "생성",
@@ -56,6 +66,7 @@
     "zoomIn": "확대",
     "zoomOut": "축소",
     "zoomSet": "줌 설정",
+    "zoomChanged": "현재 확대/축소는",
     "zoomControls": "줌 컨트롤",
     "draw": "그리기",
     "type": "입력",
@@ -73,10 +84,14 @@
     "formFieldEdit": "폼편집",
     "viewShortCutKeysFor3D": "3D 단축키 보기",
     "markAllRead": "모두 읽은상태로 표시",
+    "pageInsertion": "페이지 삽입",
     "insertPage": "페이지 삽입",
     "insert": "끼워 넣다",
     "pageManipulation": "페이지 편집",
     "replace": "바꾸기",
+    "replacePage": "페이지 교체",
+    "modal": "모달",
+    "isOpen": "열려있습니다",
     "setDestination": "목적지 설정",
     "showLess": "간략히 보기",
     "showMore": "더보기",
@@ -89,6 +104,8 @@
     "select": "선택",
     "moveToTop": "맨 위로 이동",
     "moveToBottom": "맨 아래로 이동",
+    "movePageToTop": "페이지를 맨 위로 이동",
+    "movePageToBottom": "페이지를 아래쪽으로 이동",
     "backToMenu": "메뉴로 돌아가기",
     "redactPages": "페이지 수정",
     "playAudio": "재생",
@@ -103,7 +120,10 @@
     "showComparison": "비교 표시",
     "back": "뒤",
     "clearSignature": "명확한 서명",
-    "newDocument": "새 문서"
+    "readOnlySignature": "읽기 전용 서명은 삭제할 수 없습니다.",
+    "newDocument": "새 문서",
+    "sideBySideView": "나란히 보기",
+    "pageNumberInput": "페이지 번호 입력"
   },
   "annotation": {
     "areaMeasurement": "면적측정",
@@ -117,6 +137,8 @@
     "formFillCheckmark": "체크표시",
     "formFillCross": "X표시",
     "distanceMeasurement": "거리측정",
+    "rectangularAreaMeasurement": "직사각형 영역",
+    "ellipseMeasurement": "타원 영역",
     "countMeasurement": "체크표시",
     "ellipse": "타원형",
     "eraser": "지우개",
@@ -137,6 +159,7 @@
     "redact": "수정",
     "formFillDot": "점표시",
     "signature": "서명",
+    "snipping": "잘라내기 도구",
     "squiggly": "물결선",
     "stamp": "이미지",
     "stickyNote": "코멘트",
@@ -224,6 +247,8 @@
     "watermarkPanel": "워터마크 패널"
   },
   "message": {
+    "showMore": "자세히보기",
+    "showLess": "간략히 표시",
     "toolsOverlayNoPresets": "사전설정 없음",
     "badDocument": "문서가 손상되어 불러올수 없습니다.",
     "customPrintPlaceholder": "예: 3, 4-10",
@@ -239,6 +264,7 @@
     "noAttachments": "첨부파일이 없습니다.",
     "noResults": "검색 결과가 없습니다.",
     "numResultsFound": "건의 검색결과를 찾았습니다.",
+    "loadError": "문서를 로드하는 중에 오류가 발생했습니다.",
     "notSupported": "지원하지 않는 유형의 파일입니다.",
     "passwordRequired": "비밀번호를 입력하세요.",
     "enterPasswordPlaceholder": "암호를 입력",
@@ -342,6 +368,10 @@
     "colorPalette": {
       "colorLabel": "색상"
     },
+    "colorPalettePicker": {
+      "addColor": "새로운 색상 추가",
+      "selectColor": "색상 선택"
+    },
     "displayMode": {
       "layout": "레이아웃",
       "pageTransition": "페이지 전환"
@@ -435,12 +465,10 @@
       "drawSignature": "서명 그리기*",
       "drawInitial": "이니셜 그리기*",
       "pickInitialsFile": "이니셜 선택",
-      "noSignatures": "현재 저장된 서명이 없습니다."
+      "noSignatures": "현재 저장된 서명이 없습니다.",
+      "fontStyle": "글꼴 스타일"
     },
     "pageReplacementModal": {
-      "dragAndDrop": "여기에 드래그앤드롭 하세요.",
-      "selectFile": "여기에서 파일 선택",
-      "or": "또는",
       "yourFiles": "내 파일",
       "chooseFile": "파일 선택",
       "localFile": "업로드",
@@ -487,6 +515,9 @@
       "count": "카운트",
       "length": "길이"
     },
+    "freeTextOption": {
+      "autoSizeFont": "글꼴 크기를 동적으로 조정"
+    },
     "measurementOption": {
       "scale": "배율"
     },
@@ -528,12 +559,16 @@
       "deletionModal": {
         "title": "콘텐츠 삭제",
         "message": "선택한 콘텐츠를 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
+      },
+      "digitalSign": {
+        "title": "경고 봉인문서",
+        "message": "이 문서는 서명되었으므로 변경하거나 변경할 수 없습니다."
       }
     },
     "stylePopup": {
       "textStyle": "텍스트 스타일",
       "colors": "색상",
-      "invalidFontSize": "글꼴 크기는 다음보다 작아야 합니다.",
+      "invalidFontSize": "글꼴 크기는 다음 범위에 있어야 합니다",
       "labelText": "레이블 텍스트",
       "labelTextPlaceholder": "레이블 텍스트 추가"
     },
@@ -576,7 +611,11 @@
       "delete": "삭제",
       "rotateClockwise": "오른쪽으로 회전",
       "rotateCounterClockwise": "왼쪽으로 회전",
-      "moreOptions": "추가 옵션"
+      "rotatePageClockwise": "페이지를 시계 방향으로 회전",
+      "rotatePageCounterClockwise": "페이지를 시계 반대 방향으로 회전",
+      "moreOptions": "추가 옵션",
+      "moreOptionsMenu": "추가 썸네일 옵션 메뉴",
+      "enterPageNumbers": "선택할 페이지 번호를 입력하세요."
     },
     "thumbnailsControlOverlay": {
       "move": "페이지 이동"
@@ -737,6 +776,9 @@
       "deleteTitle": "맞춤색상 삭제",
       "deleteMessage": "선택한 맞춤색상을 제거 하시겠습니까?"
     },
+    "colorPalettePicker": {
+      "deleteTitle": "맞춤 색상 삭제"
+    },
     "multiDeleteAnnotation": {
       "title": "주석을 삭제하시겠습니까?",
       "message": "삭제하면 모든 댓글, 답글 및 그룹이 제거되며 취소할 수 없습니다.\n\n 이 주석을 삭제하시겠습니까?"
@@ -748,7 +790,7 @@
     },
     "connectToURL": {
       "title": "보안 경고",
-      "message": "이 문서는 다음에 연결하려고 합니다.\n\n{{- 우리}}.\n\n 이 문서를 신뢰하는 경우 확인을 클릭하여 엽니다."
+      "message": "이 문서는 다음에 연결하려고 합니다.\n\n{{- uri}}\n\n 이 문서를 신뢰하는 경우 확인을 클릭하여 엽니다."
     }
   },
   "shortcut": {
@@ -1041,6 +1083,18 @@
       "cancelMessage": "선택한 모든 페이지 자르기를 취소하시겠습니까?"
     }
   },
+  "snippingPopUp": {
+    "title": "잘라내기 도구",
+    "clipboard": "클립 보드에 복사",
+    "download": "다운로드",
+    "cropAndRemove": "자르고 제거",
+    "snippingModal": {
+      "applyTitle": "잘라내기 적용?",
+      "applyMessage": "이 작업은 지정한 영역을 영구적으로 잘라내고 다른 페이지를 제거합니다. 취소할 수 없습니다.",
+      "cancelTitle": "잘라내기 취소?",
+      "cancelMessage": "잘라내기를 중지하시겠습니까?"
+    }
+  },
   "textEditingPanel": {
     "paragraph": "절",
     "text": "텍스트"
@@ -1083,6 +1137,26 @@
     "watermarkOptions": "워터마크 옵션",
     "watermarks": "워터마크"
   },
+  "portfolio": {
+    "createPDFPortfolio": "PDF 포트폴리오 만들기",
+    "uploadFiles": "파일 업로드하다",
+    "uploadFolder": "폴더 업로드",
+    "addFiles": "파일 추가",
+    "addFile": "파일 추가",
+    "addFolder": "폴더 추가",
+    "createFolder": "폴더 만들기",
+    "portfolioPanelTitle": "PDF 포트폴리오",
+    "portfolioNewFolder": "새 폴더",
+    "portfolioFolderPlaceholder": "폴더 이름",
+    "portfolioFilePlaceholder": "파일 이름",
+    "folderNameAlreadyExists": "폴더 이름이 이미 존재합니다",
+    "fileNameAlreadyExists": "파일 이름이 이미 존재합니다",
+    "openFile": "새 탭에서 열기",
+    "fileAlreadyExists": "존재하는 파일입니다",
+    "fileAlreadyExistsMessage": "\"{{fileName}}\" 파일이 이미 포트폴리오에 있습니다.",
+    "deletePortfolio": "정말 \"{{fileName}}\"을(를) 삭제하시겠습니까?",
+    "reselect": "재선택"
+  },
   "languageModal": {
     "selectLanguage": "언어 선택"
   },
@@ -1098,8 +1172,18 @@
     "lineSpacing": "줄 및 단락 간격",
     "bulletList": "글머리 기호 목록",
     "numberList": "번호 매기기 목록",
+    "decreaseIndent": "들여쓰기 줄이기",
+    "increaseIndent": "들여쓰기 증가",
     "insertLink": "링크 삽입",
     "insertImage": "이미지 삽입",
+    "table": "테이블",
+    "insertRowAbove": "위에 행 삽입",
+    "insertRowBelow": "아래에 행 삽입",
+    "insertColumnRight": "오른쪽에 열 삽입",
+    "insertColumnLeft": "왼쪽에 열 삽입",
+    "deleteRow": "행 삭제",
+    "deleteColumn": "열 삭제",
+    "deleteTable": "테이블 삭제",
     "notSupportedOnMobile": "Office 편집은 모바일 장치에서 지원되지 않습니다."
   },
   "insertPageModal": {
@@ -1184,6 +1268,25 @@
     "watermark": "양수표",
     "addWatermark": "워터 마크를 추가",
     "save": "파일을 저장",
-    "pageError": "잘못된 페이지입니다. 유효한 페이지 범위는 1 -"
+    "pageError": "잘못된 페이지입니다. 유효한 페이지 범위는 1 -",
+    "fileNameCannotBeEmpty": "파일 이름은 비워둘 수 없습니다."
+  },
+  "filePicker": {
+    "dragAndDrop": "여기에 파일을 끌어다 놓습니다.",
+    "selectFile": "여기에서 파일을 선택하세요.",
+    "or": "또는"
+  },
+  "stylePanel": {
+    "headings": {
+      "styles": "스타일",
+      "annotation": "주석",
+      "annotations": "주석",
+      "tool": "도구",
+      "textStyles": "텍스트 스타일",
+      "currentColor": "현재 색상",
+      "customColors": "사용자 정의 색상"
+    },
+    "addColorToCustom": "사용자 정의 색상에 추가",
+    "noToolSelected": "도구 속성을 보려면 도구를 선택하세요."
   }
 }

@@ -1,9 +1,8 @@
 import React, { useContext, useEffect, useState, useRef } from 'react';
 import { Box, Text, Icon , Stack, Button, Wrap, Flex, Heading, Divider, UnorderedList, ListItem } from '@chakra-ui/react'
-import { WebViewerContext } from '../context/WebViewerContext';
-import Toolkit from '../components/Toolkit';
+import { WebViewerContext } from '../../context/WebViewerContext';
 
-const Templates = () => {
+const DynamicTemplates = () => {
     const file = "legal-contract.docx";
     const { instance } = useContext(WebViewerContext);
 
@@ -28,4 +27,4 @@ const Templates = () => {
   );
 }
 
-export default Templates;
+export default DynamicTemplates;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Box, VStack, Collapse, Text, useDisclosure, HStack, IconButton, Divider, Heading, Stack
+  Box, VStack, Divider,
 } from '@chakra-ui/react';
 import { Outlet, useLocation } from "react-router-dom";
 import FilePicker from "../FilePicker";

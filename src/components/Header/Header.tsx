@@ -7,7 +7,7 @@ export const Header = () => {
    
     return (
         <HStack w={"100%"} px={3} py={2}>
-            <Center ml="100">
+            <Center ml="55">
                 <Image w="160px" src="https://showcase.apryse.com/assets/icons/apryse-logo.svg"/>
             </Center>
         </HStack>

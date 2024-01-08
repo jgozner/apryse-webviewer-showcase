@@ -9,7 +9,6 @@ const AnnotationClipping = () => {
 
     useEffect(() =>{
         if(!instance.Core) return;
-
         instance.UI.loadDocument(`/files/${file}`);
     },[instance]);
 
@@ -103,6 +102,11 @@ const AnnotationClipping = () => {
         newDocument.pagePushBack(newPage);
 
         instance.UI.loadDocument(newDocument)
+
+        const doc = await documentViewer.getDocument();
+        console.log(doc);
+        const pdfDoc = await doc.getPDFDoc();
+        console.log(pdfDoc)
     }
 
     const reset = () =>{

@@ -1,16 +1,17 @@
-import CustomAnnotation from "../demos/CustomAnnotation";
-import CustomZoomTool from "../demos/CustomZoomTool";
-import DocxEditing from "../demos/DocxEditing";
+import DocxEditing from "../demos/Editing/DocxEditing";
 import DocumentStructureRecognition from "../demos/IDP/StructureRecognition";
 import FormFieldDetection from "../demos/IDP/FormFieldDetection";
 import TableDetection from "../demos/IDP/TableDetection";
 import AnnotationClipping from "../demos/Advanced/AnnotationClipping";
+import StaticTemplates from "../demos/Templating/StaticTemplates";
+import DynamicTemplates from "../demos/Templating/DynamicTemplates";
 
 export enum DemoTag {
     Annotations = "Annotations", 
     IDE =  "Intelligent Data Extraction",
     Editing = "Editing",
-    Advanced = "Advanced"
+    Templates  = "Templates",
+    Advanced = "Advanced",
 }
 
 
@@ -28,22 +29,6 @@ const annotationClipping: Demo = {
     title: 'Annotation Clipping',
     path: '/annotation-clipping',
     keywords: ['clip', 'clipping', 'mask', 'annotation'],
-};
-
-const customZoomTool: Demo = {
-    element: <CustomZoomTool />,
-    tag: DemoTag.Annotations,
-    title: 'Custom Zoom Tool',
-    path: '/custom-zoom-tool',
-    keywords: ['custom', 'tool', 'custom tool'],
-};
-
-const customAnnotation: Demo = {
-    element: <CustomAnnotation />,
-    tag: DemoTag.Annotations,
-    title: 'Custom Annotation',
-    path: '/custom-annotation',
-    keywords: ['custom annotation', 'annotation', 'custom'],
 };
 
 const docxEditing: Demo = {
@@ -86,6 +71,22 @@ const documentStructureRecognition: Demo = {
     keywords: ['docx', 'word', 'editing']
 }
 
+const staticTemplates: Demo = {
+    element: <StaticTemplates />,
+    tag: DemoTag.Templates,
+    title: "Static Templates",
+    path: "/static-templates",
+    keywords: ['templates', 'generation', 'create']
+}
+
+const dynamicTemplates: Demo = {
+    element: <DynamicTemplates />,
+    tag: DemoTag.Templates,
+    title: "Dynamic Templates",
+    path: "/dynamic-templates",
+    keywords: ['templates', 'generation', 'create']
+}
+
 
 export const demos = [
     docxEditing,
@@ -93,5 +94,7 @@ export const demos = [
     tableExtraction,
     documentStructureRecognition,
     formFieldDetection,
-    annotationClipping
+    staticTemplates,
+    dynamicTemplates,
+    annotationClipping,
 ]

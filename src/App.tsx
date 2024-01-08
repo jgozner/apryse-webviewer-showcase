@@ -34,8 +34,11 @@ export const App = () => {
               <DemoBar />
               <Webviewer />
               {pathname !== "/" &&
-                <Box width={"350px"} p="2">
-                  <Outlet />
+                <Box width={"420px"} style={{marginLeft: 0}}>
+                  <Divider />
+                  <Box  p="2">
+                    <Outlet />
+                  </Box>
                 </Box>
               }
             </HStack >

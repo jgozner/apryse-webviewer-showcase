@@ -8,6 +8,7 @@
     "calibrate": "Calibrar",
     "cancel": "Cancelar",
     "confirm": "confirme",
+    "currentPageIs": "A página atual é",
     "clear": "Limpar",
     "clearAll": "Limpar tudo",
     "close": "Fechar",
@@ -20,11 +21,13 @@
     "paste": "Colar",
     "pasteWithoutFormatting": "colar sem formatar",
     "delete": "Apagar",
+    "deleted": "Excluído",
     "group": "Grupo",
     "ungroup": "Desagrupar",
     "download": "Download",
     "edit": "Editar",
     "extract": "Extrair",
+    "extractPage": "Extrair página",
     "enterFullscreen": "Tela cheia",
     "exitFullscreen": "Sair da tela cheia",
     "fit": "Ajustar",
@@ -32,6 +35,7 @@
     "fitToWidth": "Ajustar à largura",
     "more": "Mais",
     "openFile": "Abrir arquivo",
+    "page": "Página",
     "pagePrev": "Página anterior",
     "pageNext": "Próxima página",
     "pageSet": "Definir página",
@@ -44,6 +48,12 @@
     "rotate3D": "Girar",
     "rotateClockwise": "Sentido horário",
     "rotateCounterClockwise": "Sentido anti-horário",
+    "rotatedClockwise": "girado no sentido horário",
+    "rotatedCounterClockwise": "girado no sentido anti-horário",
+    "rotationIs": "a rotação atual da página é",
+    "movedToBottomOfDocument": "movido para o final do documento",
+    "movedToTopofDocument": "movido para o topo do documento",
+    "extracted": "extraído",
     "save": "Salvar",
     "post": "Postar",
     "create": "Criar",
@@ -56,6 +66,7 @@
     "zoomIn": "Aproximar",
     "zoomOut": "Afastar",
     "zoomSet": "Definir zoom",
+    "zoomChanged": "O zoom atual é",
     "zoomControls": "Controles de zoom",
     "draw": "Desenhar",
     "type": "Tipo",
@@ -73,10 +84,14 @@
     "formFieldEdit": "Editar campo de formulário",
     "viewShortCutKeysFor3D": "Exibir teclas de atalho",
     "markAllRead": "Marcar todas como lidas",
+    "pageInsertion": "Inserção de página",
     "insertPage": "Inserção de Página",
     "insert": "Inserir",
     "pageManipulation": "Manipulação de página",
     "replace": "Substituir",
+    "replacePage": "Substituir página",
+    "modal": "modal",
+    "isOpen": "está aberto",
     "setDestination": "Definir destino",
     "showLess": "mostre menos",
     "showMore": "...mais",
@@ -89,6 +104,8 @@
     "select": "Selecione",
     "moveToTop": "Mover para o topo",
     "moveToBottom": "Mover para o fundo",
+    "movePageToTop": "Mover página para o topo",
+    "movePageToBottom": "Mover a página para baixo",
     "backToMenu": "Voltar ao menu",
     "redactPages": "Redigir páginas",
     "playAudio": "Reproduzir áudio",
@@ -103,7 +120,10 @@
     "showComparison": "Mostrar comparação",
     "back": "De volta",
     "clearSignature": "Assinatura clara",
-    "newDocument": "Novo Documento"
+    "readOnlySignature": "A assinatura somente leitura não pode ser excluída",
+    "newDocument": "Novo Documento",
+    "sideBySideView": "Vista lado a lado",
+    "pageNumberInput": "Entrada do número da página"
   },
   "annotation": {
     "areaMeasurement": "Medição de área",
@@ -117,6 +137,8 @@
     "formFillCheckmark": "Carraça",
     "formFillCross": "Cruzar",
     "distanceMeasurement": "Medição de distância",
+    "rectangularAreaMeasurement": "área retangular",
+    "ellipseMeasurement": "Área da Elipse",
     "countMeasurement": "Medição de contagem",
     "ellipse": "Elipse",
     "eraser": "Apagador",
@@ -137,6 +159,7 @@
     "redact": "Suprimir",
     "formFillDot": "Ponto",
     "signature": "Assinatura",
+    "snipping": "Ferramenta de Recorte",
     "squiggly": "Linha ondulada",
     "stamp": "Carimbo",
     "stickyNote": "Comentário",
@@ -224,6 +247,8 @@
     "watermarkPanel": "Painel de marca d'água"
   },
   "message": {
+    "showMore": "Mostre mais",
+    "showLess": "Mostre menos",
     "toolsOverlayNoPresets": "Sem predefinições",
     "badDocument": "Falha ao carregar documento. O documento está corrompido ou é inválido.",
     "customPrintPlaceholder": "ex: 3, 4-10",
@@ -239,6 +264,7 @@
     "noAttachments": "Este documento não possui anexos.",
     "noResults": "Nenhum resultado encontrado.",
     "numResultsFound": "resultados encontrados",
+    "loadError": "Erro ao carregar o documento",
     "notSupported": "Esse tipo de arquivo não é compatível.",
     "passwordRequired": "Senha obrigatória",
     "enterPasswordPlaceholder": "Digite a senha",
@@ -342,6 +368,10 @@
     "colorPalette": {
       "colorLabel": "Cor"
     },
+    "colorPalettePicker": {
+      "addColor": "Adicionar nova cor",
+      "selectColor": "Selecione a cor"
+    },
     "displayMode": {
       "layout": "Layout",
       "pageTransition": "Transição de página"
@@ -435,12 +465,10 @@
       "drawSignature": "Desenhar Assinatura*",
       "drawInitial": "Desenhe iniciais*",
       "pickInitialsFile": "Escolha as iniciais",
-      "noSignatures": "No momento, não há assinaturas salvas."
+      "noSignatures": "No momento, não há assinaturas salvas.",
+      "fontStyle": "estilo de fonte"
     },
     "pageReplacementModal": {
-      "dragAndDrop": "Arraste e solte seu arquivo aqui",
-      "selectFile": "Selecione seu arquivo aqui",
-      "or": "Ou",
       "yourFiles": "Seus arquivos",
       "chooseFile": "Escolha um arquivo",
       "localFile": "Arquivo local",
@@ -487,6 +515,9 @@
       "count": "Contagem",
       "length": "Comprimento"
     },
+    "freeTextOption": {
+      "autoSizeFont": "Dimensione o tamanho da fonte dinamicamente"
+    },
     "measurementOption": {
       "scale": "Escala"
     },
@@ -528,12 +559,16 @@
       "deletionModal": {
         "title": "Excluir conteúdo",
         "message": "Tem certeza de que deseja excluir o conteúdo selecionado? Isso não pode ser desfeito."
+      },
+      "digitalSign": {
+        "title": "Aviso de documento selado",
+        "message": "Este documento foi assinado e não pode ser alterado ou alterado."
       }
     },
     "stylePopup": {
       "textStyle": "Estilo de Texto",
       "colors": "Cores",
-      "invalidFontSize": "O tamanho da fonte deve ser menor que",
+      "invalidFontSize": "O tamanho da fonte deve estar no seguinte intervalo",
       "labelText": "Texto do rótulo",
       "labelTextPlaceholder": "Adicionar texto do rótulo"
     },
@@ -576,7 +611,11 @@
       "delete": "Excluir",
       "rotateClockwise": "Sentido horário",
       "rotateCounterClockwise": "Sentido anti-horário",
-      "moreOptions": "Mais opções"
+      "rotatePageClockwise": "Girar página no sentido horário",
+      "rotatePageCounterClockwise": "Girar página no sentido anti-horário",
+      "moreOptions": "Mais opções",
+      "moreOptionsMenu": "Menu Mais opções de miniaturas",
+      "enterPageNumbers": "Insira os números das páginas para selecionar"
     },
     "thumbnailsControlOverlay": {
       "move": "Mover páginas"
@@ -737,6 +776,9 @@
       "deleteTitle": "Excluir cor personalizada",
       "deleteMessage": "Excluir a cor personalizada selecionada? Ele será removido da sua paleta de cores."
     },
+    "colorPalettePicker": {
+      "deleteTitle": "Excluir cor personalizada"
+    },
     "multiDeleteAnnotation": {
       "title": "Excluir anotações?",
       "message": "A exclusão removerá todos os comentários, respostas e agrupamentos e não poderá ser desfeita.\n\n Tem certeza de que deseja excluir essas anotações?"
@@ -748,7 +790,7 @@
     },
     "connectToURL": {
       "title": "Aviso de segurança",
-      "message": "Este documento está tentando se conectar a:\n\n{{- uri}}.\n\n Se você confia neste documento, clique em Confirmar para abri-lo."
+      "message": "Este documento está tentando se conectar a:\n\n{{- uri}}\n\n Se você confia neste documento, clique em Confirmar para abri-lo."
     }
   },
   "shortcut": {
@@ -1041,6 +1083,18 @@
       "cancelMessage": "Tem certeza de que deseja cancelar o corte de todas as páginas selecionadas?"
     }
   },
+  "snippingPopUp": {
+    "title": "Ferramenta de Recorte",
+    "clipboard": "Copiar para a Área de Transferência",
+    "download": "Baixar",
+    "cropAndRemove": "Recortar e Remover",
+    "snippingModal": {
+      "applyTitle": "Aplicar recorte?",
+      "applyMessage": "Esta ação recortará permanentemente a área especificada e removerá outras páginas. Não pode ser desfeito.",
+      "cancelTitle": "Cancelar recorte?",
+      "cancelMessage": "Tem certeza de que deseja interromper o recorte?"
+    }
+  },
   "textEditingPanel": {
     "paragraph": "Parágrafo",
     "text": "Texto"
@@ -1083,6 +1137,26 @@
     "watermarkOptions": "Opções de marca d'água",
     "watermarks": "Marcas d'água"
   },
+  "portfolio": {
+    "createPDFPortfolio": "Criar Portfólio PDF",
+    "uploadFiles": "Fazer upload de arquivos",
+    "uploadFolder": "Carregar Pasta",
+    "addFiles": "Adicionar arquivos",
+    "addFile": "Adicionar ficheiro",
+    "addFolder": "Adicionar pasta",
+    "createFolder": "Criar pasta",
+    "portfolioPanelTitle": "Portfólio PDF",
+    "portfolioNewFolder": "Nova pasta",
+    "portfolioFolderPlaceholder": "Nome da pasta",
+    "portfolioFilePlaceholder": "Nome do arquivo",
+    "folderNameAlreadyExists": "O nome da pasta já existe",
+    "fileNameAlreadyExists": "O nome do arquivo já existe",
+    "openFile": "Abrir em nova guia",
+    "fileAlreadyExists": "O arquivo já existe",
+    "fileAlreadyExistsMessage": "O arquivo \"{{fileName}}\" já existe no portfólio.",
+    "deletePortfolio": "Tem certeza de que deseja excluir \"{{fileName}}\"?",
+    "reselect": "Selecione novamente"
+  },
   "languageModal": {
     "selectLanguage": "Selecione o idioma"
   },
@@ -1098,8 +1172,18 @@
     "lineSpacing": "Espaçamento entre linhas e parágrafos",
     "bulletList": "Lista com marcadores",
     "numberList": "lista numerada",
+    "decreaseIndent": "Recuar devagar",
+    "increaseIndent": "Aumentar recuo",
     "insertLink": "Inserir link",
     "insertImage": "Inserir Imagem",
+    "table": "Mesa",
+    "insertRowAbove": "Inserir linha acima",
+    "insertRowBelow": "Inserir linha abaixo",
+    "insertColumnRight": "Inserir coluna à direita",
+    "insertColumnLeft": "Inserir coluna à esquerda",
+    "deleteRow": "Excluir linha",
+    "deleteColumn": "Excluir coluna",
+    "deleteTable": "Excluir tabela",
     "notSupportedOnMobile": "A edição do Office não é suportada em dispositivos móveis."
   },
   "insertPageModal": {
@@ -1184,6 +1268,25 @@
     "watermark": "Marca d'água",
     "addWatermark": "Adicione uma Marca D'água",
     "save": "Salvar Arquivo",
-    "pageError": "Página inválida. Os intervalos de páginas válidos estão entre 1 -"
+    "pageError": "Página inválida. Os intervalos de páginas válidos estão entre 1 -",
+    "fileNameCannotBeEmpty": "O nome do arquivo não pode estar vazio"
+  },
+  "filePicker": {
+    "dragAndDrop": "Arraste e solte seu arquivo aqui",
+    "selectFile": "Selecione seu arquivo aqui",
+    "or": "Ou"
+  },
+  "stylePanel": {
+    "headings": {
+      "styles": "Estilos",
+      "annotation": "Anotação",
+      "annotations": "Anotações",
+      "tool": "Ferramenta",
+      "textStyles": "Estilos de texto",
+      "currentColor": "Cor atual",
+      "customColors": "Cores personalizadas"
+    },
+    "addColorToCustom": "Adicionar às cores personalizadas",
+    "noToolSelected": "Selecione uma ferramenta para visualizar as propriedades da ferramenta"
   }
 }
