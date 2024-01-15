@@ -13,10 +13,10 @@ const DocumentStructureRecognition = () => {
 
   return (
     <Box>
-        <Stack spacing={'5'}>
+        <Stack spacing={'5'} mt="2">
             <Heading>Document Structure</Heading>
             <Divider />
-            <Text>Edit DOCX files directly in your browser without server-side dependencies or MS Office installations, thanks to WebViewer's seamless MS Office file editing capabilities.</Text>
+            <Text></Text>
             <Divider />
         </Stack>
     </Box>

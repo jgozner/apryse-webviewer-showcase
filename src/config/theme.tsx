@@ -29,12 +29,9 @@ export const theme = extendTheme(
       lightGrey: '#E8EFF6',
       indigo: '#0206A8',
       navy: '#00083D',
-      teal: '#00EB9B',
       yellow: '#E7E710',
       grey: '#7B8191',
       lightBlue: '#00E2EA',
-      orange: '#FF7D1B',
-      black: '#000000',
       blue: {
         500: '#0206A8'
       }
@@ -54,6 +51,7 @@ export const theme = extendTheme(
           fontWeight: "medium"
         },
       },
+      /*
       Button: {
         defaultProps: {
           variant: "primary"
@@ -90,6 +88,7 @@ export const theme = extendTheme(
           }
         }
       }
+      */
     },
   },
 );

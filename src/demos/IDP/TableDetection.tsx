@@ -3,21 +3,26 @@ import { Box, Text, Icon , Stack, Button, Wrap, Flex, Heading, Divider, Unordere
 import { WebViewerContext } from '../../context/WebViewerContext';
 
 const TableExtraction = () => {
-    const file = "PDFTRON_about.pdf";
-    const { instance } = useContext(WebViewerContext);
+  const file = "PDFTRON_about.pdf";
+  const { instance } = useContext(WebViewerContext);
 
-    useEffect(() =>{
-        if(!instance.Core) return;
-        instance.UI.loadDocument(`/files/${file}`);
-    },[instance]);
+  useEffect(() =>{
+      if(!instance.Core) return;
+      instance.UI.loadDocument(`/files/${file}`);
+  },[instance]);
+
+  const extractTables = () => {
+    
+  }
 
   return (
     <Box>
-        <Stack spacing={'5'}>
-            <Heading>DOCX Editing</Heading>
+        <Stack spacing={'5'} mt="2">
+            <Heading>Table Detection</Heading>
             <Divider />
-            <Text>Edit DOCX files directly in your browser without server-side dependencies or MS Office installations, thanks to WebViewer's seamless MS Office file editing capabilities.</Text>
+            <Text>A demo of Apryse.AI which uses our custom built AI models to extract complex tables accurately and output the data in multiple formats. Use JavaScript to detect and extract data from tables in PDF documents and images.</Text>
             <Divider />
+            <Button onClick={extractTables}>Extract Tables</Button>
         </Stack>
     </Box>
   );

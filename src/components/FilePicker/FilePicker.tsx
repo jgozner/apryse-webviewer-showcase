@@ -19,11 +19,11 @@ const FilePicker = () => {
     });
 
     return (
-      <Box w="100%" >
+      <Box mx="3" w="100%" >
         <Button 
             w="100%"
             onClick={() => openFileSelector()}
-            variant="secondary" >Choose File </Button>
+            colorScheme="blue" >Choose File </Button>
       </Box>
     )
 }

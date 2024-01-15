@@ -17,7 +17,7 @@ const DynamicTemplates = () => {
 
   return (
     <Box>
-        <Stack spacing={'5'}>
+        <Stack spacing={'5'} mt="2">
             <Heading>Templates</Heading>
             <Divider />
             <Text></Text>

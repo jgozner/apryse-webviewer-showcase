@@ -13,10 +13,10 @@ const FormFieldDetection = () => {
 
   return (
     <Box>
-        <Stack spacing={'5'}>
+        <Stack spacing={'5'} mt="2">
             <Heading>Form Field Detection</Heading>
             <Divider />
-            <Text>Edit DOCX files directly in your browser without server-side dependencies or MS Office installations, thanks to WebViewer's seamless MS Office file editing capabilities.</Text>
+            <Text>A demo of Apryse.AI which uses custom built AI models to detect and classify form fields accurately. Easily perform text and form field classifications using JavaScript in browser or app.</Text>
             <Divider />
         </Stack>
     </Box>

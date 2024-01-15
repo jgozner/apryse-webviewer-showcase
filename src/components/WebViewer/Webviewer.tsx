@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useContext } from 'react';
 import { Box, Flex, Stack } from '@chakra-ui/react';
 import WebViewer, { WebViewerInstance } from '@pdftron/webviewer';
 import { useAppDispatch } from '../../store/hooks';
-import { setInitialized } from '../../store/slices/webviewerSlice';
 import { WebViewerContext } from '../../context/WebViewerContext';
+import { wvDocumentLoaded } from '../../store/slices/webviewerSlice';
 
 const WebViewerWrap = () => {
-    const { setInstance }  = useContext(WebViewerContext);
     const dispatch = useAppDispatch();
     const webviewerRef = useRef<HTMLDivElement>(null);
+    const { setInstance }  = useContext(WebViewerContext);
 
     useEffect(() => {
         WebViewer({
@@ -20,9 +20,13 @@ const WebViewerWrap = () => {
         webviewerRef.current as any
         ).then(async (instance: WebViewerInstance) => { 
           if(instance){
-            
-            setInstance?.(instance)
-            dispatch(setInitialized(true));
+            const { documentViewer } = instance.Core;
+
+            setInstance?.(instance);
+
+            documentViewer.addEventListener('documentLoaded', () => {
+              dispatch(wvDocumentLoaded(documentViewer.getDocument()));
+            });
           }
         });
     }, []);
